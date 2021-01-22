@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+
+}
+/* inizio menu */
+nav .menu-top{
+  background-color: white;
+  text-align: left;
+}
+nav .menu-top h1{
+  color: #29B1DD;
+  padding: 20px;
+  font-size: 40px;
+}
+nav .menu-bottom{
+  background-color: #29B1DD;
+  text-align: center;
+  padding: 20px;
+}
+nav .menu-bottom label{
+  color: white;
+  font-size: 25px;
+}
