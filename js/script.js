@@ -127,7 +127,7 @@ const types = getTypes(icons);
 console.log(types);
 const select = $('#type');
 opzioni(types, select);
-// funzioni
+// funzioni opzioni
 function getTypes(array) {
   const types = [];
 
@@ -144,3 +144,9 @@ function opzioni(array, select) {
   });
 
 }
+
+// cambio opzione
+select.change(function() {
+  const selected = $(this).val();
+  console.log(selected);
+});
