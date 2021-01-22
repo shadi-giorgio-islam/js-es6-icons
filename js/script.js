@@ -151,7 +151,14 @@ function opzioni(array, select) {
 select.change(function() {
   const selected = $(this).val();
   console.log(selected);
-  $('#icons div').hasClass(selected).addClass('active');
+  $('#icons div').each(function( index ) {
+    if($( this ).hasClass(selected)){
+      $( this ).addClass('active');
+    }
+    else {
+      $( this ).removeClass('active');
+    }
+  });
 });
 
 });
