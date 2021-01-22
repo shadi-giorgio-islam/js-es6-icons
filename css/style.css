@@ -27,3 +27,25 @@ nav .menu-bottom label{
   color: white;
   font-size: 25px;
 }
+/* fine menu */
+/* inizio main */
+#icons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+}
+#icons div{
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+#icons div p{
+  color: black;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}

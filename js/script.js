@@ -112,7 +112,11 @@ const newIcons = icons.map((element) => {
 
 newIcons.forEach((element) => {
 
-document.getElementById('icons').innerHTML += `<i class='${element.family} ${element.prefix}${element.name}' style='color:${element.color}'></i>`
+document.getElementById('icons').innerHTML += `
+<div>
+<i class='${element.family} ${element.prefix}${element.name} fa-5x' style='color:${element.color}'></i>
+<p>${element.name}</p>
+</div>`
 });
 
 console.log(newIcons);
