@@ -112,6 +112,7 @@ const newIcons = icons.map((element) => {
 
 newIcons.forEach((element) => {
 
+// aggiunta icone
 document.getElementById('icons').innerHTML += `
 <div>
 <i class='${element.family} ${element.prefix}${element.name} fa-5x' style='color:${element.color}'></i>
@@ -120,3 +121,26 @@ document.getElementById('icons').innerHTML += `
 });
 
 console.log(newIcons);
+
+// Aggiunta opzioni
+const types = getTypes(icons);
+console.log(types);
+const select = $('#type');
+opzioni(types, select);
+// funzioni
+function getTypes(array) {
+  const types = [];
+
+  array.forEach((element) => {
+    if (!types.includes(element.type)) {
+      types.push(element.type);
+    }
+  });
+  return types;
+}
+function opzioni(array, select) {
+  array.forEach((element) => {
+    select.append(`<option value="${element}">${element}</option>`)
+  });
+
+}
