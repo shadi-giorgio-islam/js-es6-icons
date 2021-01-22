@@ -4,6 +4,8 @@
 // Filtrare i risultati in base alla categoria (ricordate di svuotare il container).
 // Utilizzate forEach, map e filter e cercate di strutturare tutto con le funzioni.
 
+$( document ).ready(function() {
+
 const icons = [
     {
       name: 'cat',
@@ -114,7 +116,7 @@ newIcons.forEach((element) => {
 
 // aggiunta icone
 document.getElementById('icons').innerHTML += `
-<div>
+<div class="${element.type}">
 <i class='${element.family} ${element.prefix}${element.name} fa-5x' style='color:${element.color}'></i>
 <p>${element.name}</p>
 </div>`
@@ -149,4 +151,7 @@ function opzioni(array, select) {
 select.change(function() {
   const selected = $(this).val();
   console.log(selected);
+  $('#icons div').hasClass(selected).addClass('active');
+});
+
 });
