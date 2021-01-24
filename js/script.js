@@ -116,7 +116,7 @@ newIcons.forEach((element) => {
 
 // aggiunta icone
 document.getElementById('icons').innerHTML += `
-<div class="${element.type}">
+<div class="${element.type} all">
 <i class='${element.family} ${element.prefix}${element.name} fa-5x' style='color:${element.color}'></i>
 <p>${element.name}</p>
 </div>`
